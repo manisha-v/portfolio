@@ -1,6 +1,6 @@
 # Portfolio Repository
 
-Welcome to my portfolio repository! This project showcases my web development skills using HTML, CSS, and JavaScript. The portfolio website has been successfully deployed and can be accessed [here](https://manisha-v.github.io/portfolio/).
+Welcome to my portfolio repository! This project showcases my web development skills using HTML, CSS, and JavaScript. The portfolio website can be accessed [here](https://manisha-v.github.io/portfolio/).
 
 ## About
 
@@ -28,13 +28,14 @@ The portfolio website has been deployed and is accessible through the following 
 1. Clone the repository to your local machine using `git clone`.
 2. Open the `index.html` file in your preferred web browser to view the website locally.
 
-## Contributions
-
-Contributions and feedback are welcome! If you find any bugs or have suggestions for improvement, please feel free to raise an issue or submit a pull request.
-
 ## Contact
 
 I'm always open to new opportunities and collaborations. Feel free to reach out to me through the contact form on the portfolio website or via email at [varshney.manisha05@gmail.com](mailto:varshney.manisha05@gmailcom).
-##### Connect me on [LinkedIn](https://www.linkedin.com/in/manisha-varshney-914646191/)  <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-162-498418.png" width="17"> 
+
+Connect me on [LinkedIn](https://www.linkedin.com/in/manisha-varshney-914646191/) <img src="https://cdn.iconscout.com/icon/free/png-256/linkedin-162-498418.png" width="15"> 
+
+## Show your support
+
+Give a ⭐ if you like this repo!
 
 Thank you for visiting my portfolio repository! Happy coding!
