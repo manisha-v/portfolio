@@ -1,3 +1,5 @@
+/* Created By: Manisha Varshney, On: 7/28/2023 */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -25,7 +27,6 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -76,7 +77,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+/* navbar */
 .navbar{
     position: fixed;
     width: 100%;
@@ -125,7 +126,7 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+/* menu button */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -161,7 +162,7 @@ section .title::after{
 }
 
 
-/* home section styling */
+/* home */
 .home{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
@@ -235,7 +236,7 @@ section .title::after{
     background: none;
 }
 
-/* about section styling */
+/* about */
 .about .title::after{
     content: "who i am";
 }
@@ -279,7 +280,7 @@ section .title::after{
     background: none;
 }
 
-/* experiences section styling */
+/* experiences */
 .experiences, .projects{
     color:#fff;
     background: #111;
@@ -325,7 +326,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
+/* skills */
 
 .skills .title::after{
     content: "what i know";
@@ -376,7 +377,7 @@ section .title::after{
     width: 90%;
 }
 
-/* projects section styling */
+/* projects */
 .projects .title::after{
     content: "what i built";
 }
@@ -440,7 +441,7 @@ section .title::after{
     background: crimson!important;
 }
 
-/* contact section styling */
+/* contact */
 .contact .title::after{
     content: "get in touch";
 }
@@ -535,7 +536,8 @@ section .title::after{
   color: crimson;
   background: none;
 }
-/* footer section styling */
+
+/* footer */
 footer{
     background: #111;
     padding: 15px 23px;
@@ -554,14 +556,18 @@ footer span a:hover{
 }
 
 
-/* responsive media query start */
+/* responsive media */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
-
+@media (max-width: 1104px) {
+    .home .images img{
+        visibility: hidden;
+    }
+}
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
