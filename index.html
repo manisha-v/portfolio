@@ -9,6 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skins/color1.css">
+    <link rel="stylesheet" href="skins/color1.css" class="alternate" title="c1" disabled>
+    <link rel="stylesheet" href="skins/color2.css" class="alternate" title="c2" disabled>
+    <link rel="stylesheet" href="skins/color3.css" class="alternate" title="c3" disabled>
+    <link rel="stylesheet" href="skins/color4.css" class="alternate" title="c4" disabled>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -26,7 +31,7 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#"><span>Mani</span>sha</a></div>
+            <div class="logo"><a class = "name" href="#"><span>Mani</span>sha</a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -51,9 +56,15 @@
                 <a href="#about">more about me</a>
             </div>
             <div class="images">
-                <img src="images/shape.png" class="shape">
+                <!--<img src="images/shape.png" class="shape">-->
+                <div class="circle"></div>
                 <img src="images/me.png"  class="me">
             </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/manisha-varshney-914646191/" target="_blank"><i class="fab fa-linkedin-in" ></i></a>
+            <a href="https://github.com/manisha-v/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:varshney.manisha05@gmail.com" target="_blank" class="link"><i class="fa fa-envelope"></i></a>
         </div>
     </section>
 
@@ -111,159 +122,52 @@
         <div class="max-width">
             <h2 class="title">My skills</h2>
             <div class="skills-content">
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>C/C++</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line ninety"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Python</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line ninety"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>R</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line ninety"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML/CSS/JS</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="line eigthyfive"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>SQL, PL/SQL</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line eigthy"></div>
+                <div class="column">
+                    <div class="info">
+                        <span>Languages</span>
+                        <div class="line line-40"></div>
+                        <div class="line line-20"></div>
+                        <p>C - C++ - C# - R - Python - HTML5 - CSS - Java - JavaScript - PHP</p>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>Machine Learning</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line ninety"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Deep Learning</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line sixty"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Computer Vision</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line eigthy"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>NLP</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line eigthy"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Statistics</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line seventy"></div>
+                <div class="column">
+                    <div class="info">
+                        <span>Frameworks & Libraries</span>
+                        <div class="line line-40"></div>
+                        <div class="line line-20"></div>
+                        <p>Flask - FastAPI - NumPy - Pandas - Matplotlib - Seaborn - Scikit-learn - NLTK - Tensorflow - OpenCV - ggplot2 - dplyr - e107 - rpart - neuralnet</p>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>DSA</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="line eigthyfive"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>.NET</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line seventy"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Flask</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line ninety"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>DevOps</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line sixty"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Ansible</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line seventy"></div>
+                <div class="column">
+                    <div class="info">
+                        <span>Domain</span>
+                        <div class="line line-40"></div>
+                        <div class="line line-20"></div>
+                        <p> Machine Learning  - Deep Learning - Computer Vision - NLP - Data Structure and Algorithms - Descriptive and Inferential Statistics</p>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>PoweBI</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line eigthy"></div>
+                <div class="column">
+                    <div class="info">
+                        <span>Database/Cloud</span>
+                        <div class="line line-40"></div>
+                        <div class="line line-20"></div>
+                        <p> Oracle SQL - MySQL - PL/SQL - MongoDB - SQLite - Microsoft Azure - Amazon Web Services</p>
                     </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Jupyter</span>
-                            <span>95%</span>
-                        </div>
-                        <div class="line ninety"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Postman</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line eigthy"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Oracle SQL Developer</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="line eigthy"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>Azure, AWS</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line seventy"></div>
+                </div>
+                <div class="column">
+                    <div class="info">
+                        <span>Tools</span>
+                        <div class="line line-40"></div>
+                        <div class="line line-20"></div>
+                        <p> Jupyter Notebook - Postman API - Oracle SQL Developer - Power BI - Unity Hub - AWX - MS 
+                            Office - SQL Server Management Studio</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- project -->
+    <!-- projects -->
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title">My projects</h2>
@@ -365,6 +269,60 @@
                         </div>
                     </div>
                 </a>
+                <a href="https://github.com/manisha-v/Snake-Game" target="_blank">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/snake.png" alt="">
+                            <div class="text">Snake Game</div>
+                            <p>Unity Engine - C#</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/manisha-v/Number-Cruncher" target="_blank">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/numcru.jpg" alt="">
+                            <div class="text">Number Cruncher Unity</div>
+                            <p>Unity Engine - C#</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/manisha-v/MineBlaster" target="_blank">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/mine.png" alt="">
+                            <div class="text">MineBlaster</div>
+                            <p>Unity Engine - C#</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/manisha-v/Unity3D" target="_blank">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/3d.png" alt="">
+                            <div class="text">Unity 3D Demo</div>
+                            <p>Unity Engine - C#</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/manisha-v/Game-Development" target="_blank">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/game.jpg" alt="">
+                            <div class="text">Game Development</div>
+                            <p>Unity Engine - C#</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/manisha-v/App-Development" target="_blank">
+                    <div class="card">
+                        <div class="box">
+                            <img src="images/app.jpg" alt="">
+                            <div class="text">App Developement</div>
+                            <p>Android Studio - Java</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -389,7 +347,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
                                 <div class="head">Address</div>
-                                <div class="sub-title">Aligarh, Uttar Pradesh, India</div>
+                                <div class="sub-title">Aligarh, Uttar Predesh, India</div>
                             </div>
                         </div>
                         <div class="row">
@@ -428,7 +386,18 @@
         </div>
     </section>
 
-
+    <div class="color-switch">
+        <div class="mode icon">
+            <i class="fas fa-palette"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class = "colors">
+            <span class = "c1" onclick="setActiveStyle('c1')"></span>
+            <span class = "c2" onclick="setActiveStyle('c2')"></span>
+            <span class = "c3" onclick="setActiveStyle('c3')"></span>
+            <span class = "c4" onclick="setActiveStyle('c4')"></span>
+        </div>
+    </div>
 
     <!-- The End :) -->
     <footer>

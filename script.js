@@ -65,3 +65,25 @@ $(document).ready(function(){
         }
     });
 });
+
+//Theme Color Switching
+const styleSwitchToggle = document.querySelector(".mode");
+styleSwitchToggle.addEventListener("click", () => {
+    document.querySelector(".color-switch").classList.toggle("open");
+})
+window.addEventListener("scroll", () => {
+    if( document.querySelector(".color-switch").classList.contains("open")){
+        document.querySelector(".color-switch").classList.remove("open");
+    }
+});
+const alternateStyles = document.querySelectorAll(".alternate");
+function setActiveStyle(color){
+    alternateStyles.forEach((style) => {
+        if(color===style.getAttribute("title")){
+            style.removeAttribute("disabled");
+        }
+        else{
+            style.setAttribute("disabled","true");
+        }
+    });
+}
