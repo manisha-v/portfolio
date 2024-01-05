@@ -16,6 +16,7 @@ In this portfolio, you will find information about me, my projects, skills, expe
 
 - Interactive navigation with smooth scrolling
 - Responsive design for seamless user experience across devices
+- Theme customization with four color options for a personalized look and feel
 - Sections to showcase my projects, skills, and experiences
 - Contact form to enable easy communication
 
