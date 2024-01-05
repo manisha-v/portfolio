@@ -71,7 +71,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: var(--skin-color);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -88,7 +88,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: var(--skin-color);
 }
 .navbar .max-width{
     display: flex;
@@ -100,8 +100,9 @@ section .title::after{
     font-size: 35px;
     font-weight: 600;
 }
+
 .navbar .logo a span{
-    color: crimson;
+    color: var(--skin-color);
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -120,7 +121,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: var(--skin-color);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -137,7 +138,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: var(--skin-color);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -161,6 +162,81 @@ section .title::after{
     filter: brightness(90%);
 }
 
+.color-switch{
+    position: fixed;
+    right: 0;
+    top: 80px;
+    padding: 15px;
+    width: 150px;
+    border: 1px solid black;
+    background: black; 
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+}
+
+.color-switch.open{
+    transform: translateX(-25px);
+}
+
+.color-switch .icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--skin-color); 
+    color: white;
+    right: 100%;
+    border: 1px solid black; 
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    top: 30px;
+}
+
+.color-switch .icon i{
+    line-height: 40px;
+}
+
+.color-switch h4{
+    margin: 0 0 10px;
+    color: white; 
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.color-switch .colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.color-switch .colors span{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.color-switch .c1{
+    background: crimson;
+}
+.color-switch .c2{
+    background: green;
+}
+.color-switch .c3{
+    background: blue;
+}
+.color-switch .c4{
+    background: orange;
+}
 
 /* home */
 .home{
@@ -196,7 +272,16 @@ section .title::after{
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
 }
-.home .max-width .images:hover .shape{
+.home .max-width .images .circle{
+    left: 50%;
+    height: 80%;
+    width: 60%;
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.home .max-width .images:hover .circle{
     bottom: 40px;
 }
 .home .max-width .images:hover .me{
@@ -206,6 +291,12 @@ section .title::after{
 .home .home-content .text-1{
     font-size: 27px;
 }
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--skin-color);
+  }
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
@@ -216,25 +307,59 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: var(--skin-color);
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: var(--skin-color);
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--skin-color);
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: var(--skin-color);
     background: none;
 }
+
+.home .home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    left: 12%;
+    justify-content: space-between;
+
+}
+
+.home .home-sci a{
+    margin-right: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--skin-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--skin-color);
+    text-decoration: none;
+}
+
+.home .home-sci a:hover{
+    border-radius: 30%;
+    font-size: 30px;
+    color: white;
+    border: white;
+}
+
+
 
 /* about */
 .about .title::after{
@@ -258,25 +383,25 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: var(--skin-color);
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: var(--skin-color);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid var(--skin-color);
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: var(--skin-color);
     background: none;
 }
 
@@ -304,7 +429,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .experiences .exp-content .card:hover{
-    background: crimson;
+    background: var(--skin-color);
 }
 .experiences .exp-content .card .box{
     transition: all 0.3s ease;
@@ -314,7 +439,7 @@ section .title::after{
 }
 .experiences .exp-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: var(--skin-color);
     transition: color 0.3s ease;
 }
 .experiences .exp-content .card:hover i{
@@ -332,49 +457,37 @@ section .title::after{
     content: "what i know";
 }
 .skills .skills-content .column{
-    width: calc(25% - 40px);
+    width: calc(20% - 50px);
 }
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
+
+.skills .skills-content .info{
+    margin-bottom: 5px; 
+    justify-items: flex-start;
 }
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
+.skills .skills-content span{
+    font-weight: bolder;
     font-size: 18px;
+    margin-right: 40px;
+    margin-bottom: 5px;
+    color: var(--skin-color);
 }
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
+
+.skills .skills-content p{
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 20px;
+    justify-content: center;
 }
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: crimson;
+ .line {
+    border-bottom: 3px solid var(--skin-color);
+    margin-bottom: 5px;
+    display: flex;
 }
-.skills-content .right .sixty::before{
-    width: 60%;
+ .line-40 {
+    width: 40px;
 }
-.skills-content .right .seventy::before{
-    width: 70%;
-}
-.skills-content .right .eigthy::before{
-    width: 80%;
-}
-.skills-content .right .eigthyfive::before{
-    width: 85%;
-}
-.skills-content .right .ninety::before{
-    width: 90%;
+.line-20 {
+    width: 20px;
 }
 
 /* projects */
@@ -391,7 +504,7 @@ section .title::after{
     color: white;
 }
 .projects .carousel .card:hover{
-    background: crimson;
+    background: var(--skin-color);
 }
 .projects .carousel .card .box{
     display: flex;
@@ -413,7 +526,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid var(--skin-color);
     transition: all 0.3s ease;
 }
 .projects .carousel .card:hover img{
@@ -429,7 +542,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid var(--skin-color)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -438,7 +551,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: var(--skin-color)!important;
 }
 
 /* contact */
@@ -469,7 +582,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: var(--skin-color);
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -528,12 +641,12 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: var(--skin-color);
+  border: 2px solid var(--skin-color);
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: crimson;
+  color: var(--skin-color);
   background: none;
 }
 
@@ -546,7 +659,7 @@ footer{
     font-size: 20px;
 }
 footer span a{
-    color: crimson;
+    color: var(--skin-color);
     text-decoration: none;
     margin-left: 20px;
     margin-right: 20px;
@@ -564,7 +677,7 @@ footer span a:hover{
     }
 }
 @media (max-width: 1104px) {
-    .home .images img{
+    .home .images img, .circle{
         visibility: hidden;
     }
 }
